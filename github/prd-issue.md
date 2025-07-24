@@ -6,7 +6,7 @@ To guide an AI assistant in creating a detailed Product Requirements Document (P
 
 ## Process
 
-1.  **Assess the issue status:** Read the full github conversation to understand the correct issue status and jump to the right process point. 
+1.  **Assess the issue status:** Read the full github conversation to understand the correct issue status. Log the status and jump to the right process point. 
 2.  **Status**: STARTED
     2.1  **Receive Initial Prompt:** The user provides the github issue number for a new feature or functionality.
     2.2  **Check and Validate issue:** Before moving to the other point, check and verify that the issue is readible
