@@ -11,7 +11,7 @@ To guide an AI assistant in creating a detailed Product Requirements Document (P
     2.1  **Receive Initial Prompt:** The user provides the github issue number for a new feature or functionality.
     2.2  **Check and Validate issue:** Before moving to the other point, check and verify that the issue is readible
 2.  **Status**: ASK_CLARIFICATION
-    2.1  **Ask Clarifying Questions:** Before writing the PRD, the AI _must_ ask clarifying questions to gather sufficient detail. The goal is to understand the "what" and "why" of the feature, not necessarily the "how" (which the developer will figure out). Add a comment to the issuse and make sure to provide options in letter/number lists so I can respond easily with my selections.
+    2.1  **Add github comment for Clarifying Questions:** Before writing the PRD, the AI _must_ add a comment to the github issue with clarifying questions to gather sufficient detail. The goal is to understand the "what" and "why" of the feature, not necessarily the "how" (which the developer will figure out). Make sure to provide options in letter/number lists so I can respond easily with my selections.
 3.  **Status**: CREATE_PRD
     3.1  **Generate PRD:** Based on the issue conversation, contrainsts and the user's answers to the clarifying questions, generate a PRD using the structure outlined below. Use components and functionalities already implemented in the folder "./src" as much as possible.
     3.2  **Save PRD:** Add a comment to the issue with the generated document.
