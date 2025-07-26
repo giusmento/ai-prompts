@@ -27,7 +27,7 @@ Guidelines for managing github subissue in markdown files to track progress on c
         git commit -m "feat: add payment validation logic" -m "- Validates card type and expiry" -m "- Adds unit tests for edge cases" -m "Related to T123 in PRD"
         ```
   3. Once all the subtasks are marked completed and changes have been committed, add a comment to the sub issue with a summary of what you have done and mark sub issue as completed.
-- Stop after each sub‑task and wait for the user's go‑ahead.
+- **CLOSE the Sub Issue** when all sub taks have been completed.
 
 ## Task List Maintenance
 
@@ -47,7 +47,8 @@ When working with task lists, the AI must:
 2. Follow the completion protocol:
    - Add comment to sub issue each finished **sub‑task**.
    - Add final comment with sub tasks description once **all** subtasks are DONE.
-3. Add newly discovered tasks.
-4. Keep "Relevant Files" accurate and up to date.
-5. Before starting work, check which sub‑task is next.
-6. After implementing a sub‑task, update the sub issut and then pause for user approval.
+3. Close the sub issue when all sub tasks have been completed
+4. Add newly discovered tasks.
+5. Keep "Relevant Files" accurate and up to date.
+6. Before starting work, check which sub‑task is next.
+7. After implementing a sub‑task, update the sub issue and then pause for user approval.
