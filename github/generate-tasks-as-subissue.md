@@ -18,13 +18,15 @@ To guide an AI assistant in creating a detailed, step-by-step github sub-issue f
 ## Process
 
 1.  **Receive PRD Reference:** The user points the AI to a specific github issue containg the PRD description. The AI reads the issue with all the comments and jump the the correct Phase.
-2.  **Phase 1: Analyze PRD:** The AI reads and analyzes the functional requirements, user stories, and other sections of the specified PRD.
-3.  **Phase 1: Comment the Github issue with a list of Parent Tasks:** Based on the PRD analysis, comment the issue with the main, high-level tasks required to implement the feature. Use your judgement on how many high-level tasks to use. Do not exceed with tasks. It's likely to be between 1 and 3. The number of tasks depends on the best effort to reduce the number relevant files needed to build the task. Present these tasks to the user in the specified format (without sub-tasks yet). Inform the user: "I have generated the high-level tasks based on the PRD. Ready to generate the sub-tasks? Respond with 'Go' to proceed."
-4.  **Wait for Confirmation:** Pause and wait for the user to respond with "Go".
-5.  **Phase 2: Generate Sub-Tasks:** Once the user confirms, break down each parent task into smaller, actionable sub-tasks necessary to complete the parent task. Ensure sub-tasks logically follow from the parent task and cover the implementation details implied by the PRD.
-6.  **Phase 2: Identify Relevant Files:** Based on the tasks and PRD, identify potential files that will need to be created or modified. List these under the `Relevant Files` section, including corresponding test files if applicable.
-7.  **Phase 2: Generate Github Sub-Tasks** For each parent tasks, its sub-tasks, its relevant files, and its notes create a sub-issue in Markdown structure. Create subtask with name `[issue]-task-[task-number] where `[issue]` in the parent issue name and `[task-number]` is the task index.
-8.  **Phase 2: Final Comment to github Issue:** Create a comment to the parent issue with the list of created task and links to the created sub-tasks.
+2.  **Phase 1:**
+    a. **1.1: Analyze PRD:** The AI reads and analyzes the functional requirements, user stories, and other sections of the specified PRD.
+    b. **1.2: Comment the Github issue with a list of Parent Tasks:** Based on the PRD analysis, comment the issue with the main, high-level tasks required to implement the feature. Use your judgement on how many high-level tasks to use. Do not exceed with tasks. It's likely to be between 1 and 3. The number of tasks depends on the best effort to reduce the number relevant files needed to build the task. Present these tasks to the user in the specified format (without sub-tasks yet). Inform the user: "I have generated the high-level tasks based on the PRD. Ready to generate the sub-tasks? Respond with 'Go' to proceed."
+    c.  **Wait for Confirmation:** Pause and wait for the user to respond with "Go".
+3. **Phase 2:**
+    a.  **2.1: Generate Sub-Tasks:** Once the user confirms, break down each parent task into smaller, actionable sub-tasks necessary to complete the parent task. Ensure sub-tasks logically follow from the parent task and cover the implementation details implied by the PRD.
+    b.  **2.2: Identify Relevant Files:** Based on the tasks and PRD, identify potential files that will need to be created or modified. List these under the `Relevant Files` section, including corresponding test files if applicable.
+    c.  **2.3: Generate Github Sub-Tasks** For each parent tasks, its sub-tasks, its relevant files, and its notes create a sub-issue in Markdown structure. Create subtask with name `[issue]-task-[task-number] where `[issue]` in the parent issue name and `[task-number]` is the task index.
+    d.  **2.4: Final Comment to github Issue:** Create a comment to the parent issue with the list of created task and links to the created sub-tasks.
 
 ## Output Format
 
