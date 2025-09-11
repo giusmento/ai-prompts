@@ -29,7 +29,17 @@ dependencies = [
 ]
 
 [project.scripts]
-ai-prompts = "start:main"
+ai-prompts = "src.start:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.hatch.build.targets.wheel]
+include = [
+    "server.py",
+    "build-prd/",
+    "documentation/",
+]
 
 [project.urls]
 Homepage = "https://github.com/giuseppemento/ai-prompts"
@@ -44,5 +54,3 @@ dev-dependencies = [
     "mypy>=1.0.0",
 ]
 
-[tool.setuptools]
-package-dir = {"" = "src"}
