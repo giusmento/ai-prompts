@@ -1,0 +1,10 @@
+## Task List Execution:
+
+As in the file process-task-list.md execute tasks defined in the "Beauty Center Booking System - Implementation tasks.md"
+
+## Task Implementation:
+
+- **Get Context**: Read the file PRD "EnhanceBeauty Center Booking system PRD.md" to understand the context
+- **Select relevant files**: Import in the context only Relevant files
+- **Summary**: Prepare a Short description of what you want to archieve
+- **Ask Confirmation**: Do **NOT** start the first task until you ask the user for permission and they say "yes" or "y"

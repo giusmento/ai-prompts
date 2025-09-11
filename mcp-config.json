@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "ai-prompts": {
+      "command": "uv",
+      "args": ["run", "python", "server.py"],
+      "cwd": "/Users/giuseppemento/private-repos/ai-prompts"
+    }
+  }
+}
