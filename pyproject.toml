@@ -38,6 +38,7 @@ package-dir = {"" = "src"}
 include = [
     "server.py",
     "build-prd/",
+    "src/",
     "documentation/",
 ]
 
