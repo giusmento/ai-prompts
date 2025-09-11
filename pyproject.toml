@@ -29,14 +29,7 @@ dependencies = [
 ]
 
 [project.scripts]
-ai-prompts = "src.start:main"
-
-[tool.hatch.build.targets.wheel]
-include = [
-    "server.py",
-    "build-prd/",
-    "documentation/",
-]
+ai-prompts = "start:main"
 
 [project.urls]
 Homepage = "https://github.com/giuseppemento/ai-prompts"
@@ -51,26 +44,5 @@ dev-dependencies = [
     "mypy>=1.0.0",
 ]
 
-[tool.black]
-line-length = 88
-target-version = ['py38']
-
-[tool.ruff]
-line-length = 88
-target-version = "py38"
-select = [
-    "E",  # pycodestyle errors
-    "W",  # pycodestyle warnings
-    "F",  # pyflakes
-    "I",  # isort
-    "B",  # flake8-bugbear
-    "C4", # flake8-comprehensions
-    "UP", # pyupgrade
-]
-
-[tool.mypy]
-python_version = "3.8"
-warn_return_any = true
-warn_unused_configs = true
-disallow_untyped_defs = true
-disallow_incomplete_defs = true
+[tool.setuptools]
+package-dir = {"" = "src"}
