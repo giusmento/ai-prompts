@@ -3,6 +3,7 @@ from pydantic import BaseModel
 from src.types.types import CommitTemplate
 import os
 
+
 mcp = FastMCP("local_ai_prompts")
 
 
