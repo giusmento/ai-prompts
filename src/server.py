@@ -1,5 +1,4 @@
 from mcp.server.fastmcp import FastMCP
-from enum import Enum
 from pydantic import BaseModel
 from src.types.types import CommitTemplate
 import os
