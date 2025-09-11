@@ -29,7 +29,7 @@ dependencies = [
 ]
 
 [project.scripts]
-ai-prompts = "src.start:main"
+ai-prompts = "src.server:main"
 
 [tool.setuptools]
 package-dir = {"" = "src"}
