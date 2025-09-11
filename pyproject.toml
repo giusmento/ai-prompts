@@ -29,7 +29,7 @@ dependencies = [
 ]
 
 [project.scripts]
-ai-prompts-server = "local:main"
+ai-prompts = "src.start:main"
 
 [tool.hatch.build.targets.wheel]
 include = [
